@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap 5 css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="mb-md-2">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-0 fs-6">
+            <div class=" container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="" class="img-fluid" style="height: 70px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 a-hover">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" href="#">Link</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link active" href="#">Login</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="font-size: 0.8rem;">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-default-alt" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <main>
+        <section class="container shadow">
+            <div class="row mx-0">
+                <div class="col-12 col-md-12 col-lg-8 col-xl-8 posts">
+                    <script>
+                        for (i = 1; i < 5; i++) {
+                            const post = `<div class="post-content my-2">
+                        <div class="post-image">
+                            <div>
+                                <img class="w-100" src="assets/Blog-post/blog${i}.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="post-info bg-default p-2">
+                                <span class="mx-1"><i class="fa fa-user me-1"></i>Admin</span>
+                                <span class="mx-1"><i class="fa fa-calendar-alt me-1"></i>January 14, 2019</span>
+                                <span class="mx-1"><i class="fa fa-msg me-1"></i>0${i} Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title my-2">
+                            <a class="my-2 fs-4" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet libero ipsum harum, enim
+                            necessitatibus eum fugiat itaque. At nihil tempora non ullam perspiciatis, atque enim
+                            sed laboriosam cum voluptate amet pariatur vero magnam ipsam minus reprehenderit
+                            nesciunt corrupti officiis tenetur?</p>
+                        <a href="#" class="btn btn-default">Read More </a>
+                    </div>
+                    <hr>`
+                            document.write(post)
+                        }
+                    </script>
+
+                    <!-- <div class="post-content">
+                        <div class="post-image">
+                            <div>
+                                <img class="w-100" src="assets/Blog-post/blog1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="post-info bg-default p-2">
+                                <span class="mx-1"><i class="fa fa-user me-1"></i>Admin</span>
+                                <span class="mx-1"><i class="fa fa-calendar-alt me-1"></i>January 14, 2019</span>
+                                <span class="mx-1"><i class="fa fa-msg me-1"></i>02 Comments</span>
+                            </div>
+                        </div>
+                        <div class="post-title my-2">
+                            <a class="my-2 fs-5" href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet libero ipsum harum, enim
+                            necessitatibus eum fugiat itaque. At nihil tempora non ullam perspiciatis, atque enim
+                            sed laboriosam cum voluptate amet pariatur vero magnam ipsam minus reprehenderit
+                            nesciunt corrupti officiis tenetur?</p>
+                        <a href="#" class="btn btn-default">Read More </a>
+                    </div> -->
+
+                    <div class="pagination d-flex justify-content-center">
+                        <a class="mx-1 bg-secondary text-white px-3 py-2 rounded-circle" href="#"><i
+                                class="fa fa-chevron-left"></i></a>
+                        <a class="mx-1 bg-secondary text-white px-3 py-2 rounded-circle" href="#">1</a>
+                        <a class="mx-1 bg-secondary text-white px-3 py-2 rounded-circle" href="#">2</a>
+                        <a class="mx-1 bg-secondary text-white px-3 py-2 rounded-circle" href="#">3</a>
+                        <a class="mx-1 bg-secondary text-white px-3 py-2 rounded-circle" href="#"><i
+                                class="fa fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                    <div class="side-bar mt-2 mb-4">
+                        <ul class="category-list m-0 p-0" style="list-style: none;">
+                            <h4 class="border p-1 p-2 rounded">Category</h4>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Software</a> <span>(06)</span>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Life</a> <span>(09)</span>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Animation</a> <span>(15)</span>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Software</a> <span>(06)</span>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Simple</a> <span>(02)</span>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Software</a> <span>(06)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="side-bar mt-2 mb-4">
+                        <ul class="m-0 p-0" style="list-style: none;">
+                            <h4 class="border p-1 p-2 rounded">Popular Posts</h4>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit
+                                    doloribus voluptatem earum expedita.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque dolorem
+                                    qui maxime ullam aut in eius commodi.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti non soluta
+                                    nemo quos enim assumenda dolore!</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni impedit
+                                    doloribus voluptatem earum expedita.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</a>
+                            </li>
+                            <li class="list-items bg-default my-1 px-2 py-1 rounded d-flex justify-content-between">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum itaque dolorem
+                                    qui maxime ullam aut in eius commodi.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
