@@ -12,7 +12,7 @@
 }
 
 body {
-  /* background: #f7f8f9; */
+  /* background: #05050512; */
   /* background: white; */
   font-family: "Roboto Slab", serif;
   font-size: 14px;
@@ -51,7 +51,7 @@ a {
   background: var(--bg-default);
   /* color: inherit; */
 }
-/* 
-.page {
-  
+
+/* footer {
+  background: black;
 } */
